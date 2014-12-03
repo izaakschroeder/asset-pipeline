@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title Welcome
+
+		// WebComponents polyfill
+		script(src='webcomponentsjs/webcomponents.js')
+
+		// Site-wide styles
+		link(rel='stylesheet', href='styles/index.scss')
+
+		// Components
+		link(rel='import', href='components/my-component/index.jade')
+
+	body
+		h1 Hello World
+
+		my-component(user='test')
