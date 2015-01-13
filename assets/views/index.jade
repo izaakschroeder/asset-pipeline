@@ -4,10 +4,13 @@ html
 		title Welcome
 
 		// WebComponents polyfill
+		//script(type='text/javascript') 
+		//	| import 'foo/bar';
+		
 		script(src='webcomponentsjs/webcomponents.js')
 
 		// Site-wide styles
-		link(rel='stylesheet', href='styles/index.scss')
+		link(rel='stylesheet', type='text/scss', href='assets/stylesheets/index.scss')
 
 		// Components
 		link(rel='import', href='components/my-component/index.jade')
